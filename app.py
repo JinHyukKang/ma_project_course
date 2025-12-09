@@ -25,7 +25,7 @@ st.markdown("---")
 def load_model():
     """모델 로드"""
     try:
-        return joblib.load('./05_app/churn_model.joblib')
+        return joblib.load('./churn_model.joblib')
     except FileNotFoundError:
         st.error("❌ 모델 파일을 찾을 수 없습니다. 먼저 model_training.ipynb를 실행하여 모델을 학습하세요.")
         return None
@@ -34,7 +34,7 @@ def load_model():
 def load_scaler():
     """스케일러 로드"""
     try:
-        return joblib.load('./05_app/scaler.joblib')
+        return joblib.load('./scaler.joblib')
     except FileNotFoundError:
         return None
 
@@ -42,7 +42,7 @@ def load_scaler():
 def load_label_encoders():
     """LabelEncoder 로드"""
     try:
-        return joblib.load('./05_app/label_encoders.joblib')
+        return joblib.load('./label_encoders.joblib')
     except FileNotFoundError:
         return None
 
@@ -50,7 +50,7 @@ def load_label_encoders():
 def load_model_info():
     """모델 정보 로드"""
     try:
-        with open('./05_app/model_info.json', 'r', encoding='utf-8') as f:
+        with open('./model_info.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         return None
@@ -59,7 +59,7 @@ def load_model_info():
 def load_feature_names():
     """특성 이름 로드"""
     try:
-        with open('./05_app/feature_names.json', 'r', encoding='utf-8') as f:
+        with open('./feature_names.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         return None
