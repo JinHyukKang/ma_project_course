@@ -1,0 +1,31 @@
+{
+  "model_name": "로지스틱 회귀",
+  "accuracy": 0.804070042593469,
+  "precision": 0.6503067484662577,
+  "recall": 0.5668449197860963,
+  "f1_score": 0.6057142857142858,
+  "roc_auc": 0.8428874478563684,
+  "feature_names": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "training_samples": 4930,
+  "test_samples": 2113
+}
